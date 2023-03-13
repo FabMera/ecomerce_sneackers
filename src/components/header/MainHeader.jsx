@@ -3,8 +3,10 @@ import CartIcon from "../../../Icons/CartIcon";
 import CloseIcon from "../../../Icons/CloseIcon";
 import MenuIcon from "../../../Icons/MenuIcon";
 import NavLinkHeader from "./NavLinkHeader";
+import LogoSneakes from "@/assets/images/logo.svg";
+import AvatarImg from "@/assets/images/image-avatar.png";
 
-const MainHeader = ({ LogoSneakes, AvatarImg }) => {
+const MainHeader = () => {
   const [navClass, setNavClass] = useState(
     " hidden h-full w-3/5 flex-col gap-y-5 bg-white  p-8 font-bold"
   );
