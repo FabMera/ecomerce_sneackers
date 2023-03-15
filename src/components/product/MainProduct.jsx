@@ -1,6 +1,6 @@
 import React from "react";
 import DetailsProducts from "@/components/product/DetailsProducts";
-import SlideProducts from "./SlideProducts";
+import SlideProducts from "@/components/product/SlideProducts";
 
 const MainProduct = () => {
   return (

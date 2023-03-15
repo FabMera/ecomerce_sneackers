@@ -17,6 +17,9 @@ const SlideProducts = () => {
   const [index, setIndex] = useState(0);
 
   const handleClicNext = () => {
+    /* si el index es igual al tamaño del array en su ultima posicion retorna 0 
+    de lo contrario va sumando 1 
+    */
     index === ARRAY_IMGS.length - 1 ? setIndex(0) : setIndex(index + 1);
   };
   const handleClickPrev = () => {
@@ -26,7 +29,7 @@ const SlideProducts = () => {
   return (
     <section className="grid md:grid-cols-4 md:gap-4">
       <div className="relative col-span-4 ">
-        <img src={ARRAY_IMGS[index]} alt="" className="aspect-[16/14] " />
+        <img src={ARRAY_IMGS[index]} alt="" className="aspect-[16/12] w-full " />
         <div className="absolute top-1/2 left-0    flex w-full -translate-y-1/2  justify-between px-4">
           <button
             onClick={handleClickPrev}

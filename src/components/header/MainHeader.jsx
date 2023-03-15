@@ -8,11 +8,11 @@ import AvatarImg from "@/assets/images/image-avatar.png";
 
 const MainHeader = () => {
   const [navClass, setNavClass] = useState(
-    " hidden h-full w-3/5 flex-col gap-y-5 bg-white  p-8 font-bold"
+    " hidden md:flex md:gap-4 md:static md:mr-auto md:h-auto md:flex-row  p-8 font-bold"
   );
   const handleOpenMenu = () => {
     setNavClass(
-      "absolute top-0 left-0 flex h-full w-3/5 flex-col bg-white py-4 font-bold md:static md:mr-auto md:flex md:flex-row md:gap-4 md:p-0 md:h-auto  "
+      "absolute top-0 left-0 flex h-full w-3/5 flex-col bg-white py-4 font-bold md:static md:mr-auto md:flex md:flex-row md:gap-4 md:p-0 md:h-auto z-10  "
     );
   };
   const handleCloseMenu = () => {
@@ -22,7 +22,7 @@ const MainHeader = () => {
   };
   return (
     <>
-      <header className="container mx-auto flex items-center gap-8 px-2 py-4 md:p-0 md:py-0">
+      <header className="container mx-auto flex items-center gap-8 p-4 md:p-0 ">
         <button className="md:hidden" onClick={handleOpenMenu}>
           <MenuIcon />
         </button>
